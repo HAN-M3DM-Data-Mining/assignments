@@ -1,0 +1,41 @@
+---
+title: "Assigment - kNN DIY"
+author:
+  - name author here - Author
+  - name reviewer here - Reviewer
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+   html_notebook:
+    toc: true
+    toc_depth: 2
+---
+
+
+```{r}
+library(tidyverse)
+library(googlesheets4)
+library(class)
+library(caret)
+```
+
+---
+
+Choose a suitable dataset from the `dataset` folder and train your own kNN model. Follow all the steps from the CRISP-DM model.
+
+
+## Business Understanding
+text and code here
+
+## Data Understanding
+text and code here
+
+## Data Preparation
+text and code here
+
+## Modeling
+text and code here
+
+## Evaluation and Deployment
+text and code here
+
+reviewer adds suggestions for improving the model

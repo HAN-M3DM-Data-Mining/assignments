@@ -1,0 +1,19 @@
+---
+title: "Datasets Description"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+---
+
+Follow the links to more information on the datasets
+
+[KNN-occupancy.csv](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+)
+
+[KNN-hcvdat0.csv](https://archive.ics.uci.edu/ml/datasets/HCV+data)
+
+[NB-fakenews](https://www.kaggle.com/c/fake-news/data?select=train.csv)
+
+[NB-fakenews](https://github.com/jing-qian/A-Benchmark-Dataset-for-Learning-to-Intervene-in-Online-Hate-Speech)
