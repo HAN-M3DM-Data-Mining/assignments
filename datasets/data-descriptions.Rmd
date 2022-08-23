@@ -16,4 +16,4 @@ Follow the links to more information on the datasets
 
 [NB-fakenews](https://www.kaggle.com/c/fake-news/data?select=train.csv)
 
-[NB-fakenews](https://github.com/jing-qian/A-Benchmark-Dataset-for-Learning-to-Intervene-in-Online-Hate-Speech)
+[NB-reddit-hate-speech](https://github.com/jing-qian/A-Benchmark-Dataset-for-Learning-to-Intervene-in-Online-Hate-Speech)
