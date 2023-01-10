@@ -11,4 +11,4 @@
 * During each block the analyst will author the notebook. The reviewer will assess the quality of the work and suggest improvements.
 * At the end of the course each team participant will have authored one notebook and reviewed another one.
 
-Authors open de `.Rmd` files in RStudio and follow the instructions. Make sure all steps in the data mining process are properly documented. The quality of documentation must be such that an informed data specialist must be able to understand the challenge and the conclusions, the design decisions and the reasons for the choices made during the process.
+Authors open de `.qmd` files in RStudio and follow the instructions. Make sure all steps in the data mining process are properly documented. The quality of documentation must be such that an informed data specialist must be able to understand the challenge and the conclusions, the design decisions and the reasons for the choices made during the process.
