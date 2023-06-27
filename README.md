@@ -6,9 +6,11 @@
 
 ## Instructions
 
-* Choose one teammate
-* Decide who will analyze the kNN and who the NB problem.
-* During each block the analyst will author the notebook. The reviewer will assess the quality of the work and suggest improvements.
-* At the end of the course each team participant will have authored one notebook and reviewed another one.
+Through the whole of the program you'll be working on your own data mining projects:
+* You will setup your own data science environment
+* Find and choose datasets for your projects
+* Run several full data mining cycles
+* Document and share your learnings
+* Demonstrate you newly acquired competences and skills
 
 Authors open de `.qmd` files in RStudio and follow the instructions. Make sure all steps in the data mining process are properly documented. The quality of documentation must be such that an informed data specialist must be able to understand the challenge and the conclusions, the design decisions and the reasons for the choices made during the process.

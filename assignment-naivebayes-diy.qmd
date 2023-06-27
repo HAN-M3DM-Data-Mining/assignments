@@ -10,29 +10,34 @@ output:
     toc_depth: 2
 ---
 
-```{r}
-library(tidyverse)
-library(tm)
-library(caret)
-library(wordcloud)
-library(e1071)
-```
-
-Choose a suitable dataset from [this](https://github.com/HAN-M3DM-Data-Mining/assignments/tree/master/datasets) folder and train your own Naive Bayes model. Follow all the steps from the CRISP-DM model.
+Choose a suitable dataset from [this](https://github.com/HAN-M3DM-Data-Mining/assignments/tree/master/datasets) folder or bring your own. Train your own Naive Bayes model. Follow all the steps from the CRISP-DM model.
 
 ## Business Understanding
-text and code here
+
+Explain:
+
+-   What are your trying to do? Avoid any jargon.
+
+-   How is it done today?
+
+-   What is different to your approach?
+
+-   Who cares? If you are successful, what difference will it make?
 
 ## Data Understanding
+
 text and code here
 
 ## Data Preparation
+
 text and code here
 
 ## Modeling
+
 text and code here
 
 ## Evaluation and Deployment
+
 text and code here
 
 reviewer adds suggestions for improving the model
