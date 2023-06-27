@@ -1,6 +1,6 @@
 # Module Data Mining - Assignments
 
-![](https://thequotes.in/wp-content/uploads/2016/05/Albert-Einstein-Quotes-4.jpg)
+![](https://i.ytimg.com/vi/OOjr-PXLShc/maxresdefault.jpg)
 
 <div class="lead">For the assessment of this module you'll have to work on one kNN and one Naive Bayes (NB) problem and serve two roles: author and reviewer.</div>
 
