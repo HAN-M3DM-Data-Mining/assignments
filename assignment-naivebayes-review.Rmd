@@ -1,0 +1,93 @@
+---
+title: "Assigment - Naive Bayes DIY"
+author:
+  - name author here - Witek
+  - name reviewer here - Reviewer
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+   html_notebook:
+    toc: true
+    toc_depth: 2
+---
+
+## Business Understanding
+
+Landmines, remnants of past conflicts, continue to pose a significant threat in various regions worldwide. Their presence not only endangers military personnel but also disrupts civilian life and impedes development. Addressing this challenge, we turned to data science for a solution. Using a dataset from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/151/connectionist+bench+sonar+mines+vs+rocks), we analyzed sonar signals. Specifically:
+
+-   The dataset contains 111 patterns from sonar signals reflected off metal cylinders (representing mines).
+-   It also includes 97 patterns from signals reflected off cylindrical rocks.
+-   Each pattern is composed of 60 numbers, each indicating the energy within a specific frequency band.
+
+By employing the K-Nearest Neighbours (KNN) algorithm, we trained a model to classify these signals. The objective was clear: to accurately differentiate between signals from mines and those from rocks, providing a reliable tool for landmine detection and, ultimately, removal.
+
+## Data Understanding
+
+This section outlines the process of reading data from a URL and applying Exploratory Data Analysis (EDA) on it.
+
+```{python}
+# Importing Necessary Libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
+
+plt.clf()
+```
+
+```{python}
+# Fetch the data from URL.
+url = "https://raw.githubusercontent.com/HAN-M3DM-Data-Mining/assignments/master/datasets/KNN-sonar-all-data.csv"
+data = pd.read_csv(url)
+
+# Assess the quality of the data by checking its basic information, statistical summary, and any missing values
+print(data.info())
+print(data.describe())
+print(data.isnull().sum())
+
+# Visuale the distribution of the target variable 
+sns.countplot(x=data['label'])
+plt.show()
+```
+
+## Data Preparation
+
+Before training our model, we need to split our data into features and target variables, and then into training and testing sets.
+
+```{python}
+X = data.drop('Label', axis=1)
+y = data['Label']
+X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+```
+
+## Modeling
+
+We'll train a KNN model with k=5 on our training data.
+
+```{python}
+knn = KNeighborsClassifier(n_neighbors=5)
+knn.fit(X_train, y_train)
+```
+
+## Evaluation
+
+Let's predict on our test set and evaluate the model's performance using a confusion matrix, classification report, and accuracy.
+
+```{python}
+y_pred = knn.predict(X_test)
+conf_matrix = confusion_matrix(y_test, y_pred)
+print("Confusion Matrix:\n", conf_matrix)
+report = classification_report(y_test, y_pred)
+print("\nClassification Report:\n", report)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"\nAccuracy: {accuracy * 10:.2f}%")
+```
+
+```{python}
+sns.heatmap(conf-matrix, annot=True, cmap='Blues', fmt='g')
+plt.xlabel('Predicted labels')
+plt.ylabel('True labels')
+plt.show()
+```
