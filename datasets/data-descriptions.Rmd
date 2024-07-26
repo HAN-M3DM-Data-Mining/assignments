@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Follow the links to more information on the datasets
 
-[KNN-occupancy.csv](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+)
+[KNN-occupancy.csv](https://archive.ics.uci.edu/dataset/357/occupancy+detection)
 
 [KNN-hcvdat0.csv](https://archive.ics.uci.edu/ml/datasets/HCV+data)
 
